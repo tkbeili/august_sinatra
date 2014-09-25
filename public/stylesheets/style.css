@@ -1,0 +1,79 @@
+h1 {
+  font-family: 'Lobster', 'Arial';
+}
+
+.special-container {
+  width: 50%;
+  height: 100px;
+  float: left;
+}
+
+.green {
+  background-color: green;
+}
+
+.white {
+  background-color: white;
+}
+
+@media (max-width: 600px) {
+  .special-container {
+    width: 100%;
+  }
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.blue {
+  background-color: blue;
+}
+
+div.third {
+  width: 32%;
+  border-radius: 5px;
+  border: 1px solid;
+  height: 100px;
+  float: left;
+  margin: 2px;
+}
+
+@media (max-width: 600px) {
+  div.third {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+.small {
+  height: 100px;
+}
+
+div.animated {
+  height: 100px;
+  width: 100px;
+  border-radius: 5px;
+  border: 1px solid;
+/*  -webkit-animation: colorSwitch 5s;
+  animation: colorSwitch 5s;*/
+}
+
+@-webkit-keyframes colorSwitch {
+  from { background: blue;}
+  to   { background: red; }
+}
+
+@keyframes colorSwitch {
+  from { background: blue;}
+  to   { background: red; }
+}
+
