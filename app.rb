@@ -37,6 +37,7 @@ class User
   property :message, Text
   property :phone_number, String
   property :created_at, DateTime
+  property :department, String
 
 end
 
@@ -78,6 +79,7 @@ post "/contact" do
       email:      params[:email],
       urgent:     (params[:urgent] == "on"),
       message:    params[:message],
+      department: params[:department],
       created_at: Time.now
     })
   full_name = "#{params[:first_name]} #{params[:last_name]}"

@@ -77,3 +77,6 @@ div.animated {
   to   { background: red; }
 }
 
+.every_three:nth-child(3n+1) {
+    background: red;
+}

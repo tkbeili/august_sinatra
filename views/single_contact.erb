@@ -3,8 +3,13 @@
 
 <h1>Viewing <%= "#{@user.first_name} #{@user.last_name}".capitalize %></h1>
 
-<p>Email: <%= @user.email %></p>
+<p class="bg-success">Email: <%= @user.email %></p>
 
 <p>Message: <%= @user.message %></p>
 
-<p>Urgent: <%= @user.urgent ? "Yes" : "No" %></p>
+<p class="<%= @user.urgent ? 'bg-danger' : 'bg-success' %>">Urgent: <%= @user.urgent ? "Yes" : "No" %></p>
+
+<% label_map = {"technical" => "label-info", "marketing" => "label-success", "sales" => "label-warning"} %>
+<p class="label <%= label_map[@user.department] %>">
+ Department: <%= @user.department  %>
+</p>
